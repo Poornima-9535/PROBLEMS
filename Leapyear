@@ -1,0 +1,27 @@
+
+import java.util.*;
+
+class leapyear {
+
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int year;
+        System.out.println("enter the year");
+        year = sc.nextInt();
+        leapyearfun(year);
+    }
+
+    public static void leapyearfun(int year) {
+        if (year % 400 == 0)
+            System.out.println(year +" is Leapyear");
+        else if (year % 4== 0 &&  year % 100 != 0)
+    
+     System.out.println(year +" is Leapyear");
+            else 
+                System.out.println(year +" is  not Leapyear");
+
+            
+    
+
+    }
+}
